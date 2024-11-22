@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Streaming</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #00bcd4 30%, #000000 70%);
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 50px 20px;
+        }
+        .game-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            width: 300px;
+            text-align: center;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-base-300">
+        <div class="flex-none">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-primary m-1">Menu</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html" class="link-card">Home</a></li>
+                    <li><a href="games.html" class="link-card">Games</a></li>
+                    <li><a href="streaming.html" class="link-card">Streaming</a></li>
+                    <li><a href="sideloading.html" class="link-card">Sideloading</a></li>
+                    <li><a href="tutorials.html" class="link-card">Tutorials</a></li>
+                    <li><a href="projects.html" class="link-card">Other Projects</a></li>
+                    <li><a href="contact.html" class="link-card">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="content">
+        <h1 class="text-4xl font-bold mb-5">Free Streaming Services</h1>
+        <div class="game-card">
+            <h2 class="text-2xl">yuPPow</h2>
+            <p>Best free browser streaming for movies and TV. No ads and basically eveey movie/tv show you could want.</p>
+            <a href="https://yuppow.com" class="btn btn-primary">Watch Here</a>
+        </div>
+        <div class="game-card">
+            <h2 class="text-2xl">h!anime</h2>
+            <p>Best free anime streaming service as of right now but this changes often.</p>
+            <a href="https://hianime.to" class="btn btn-primary">Watch Here</a>
+        </div>
+        <div class="game-card">
+            <h2 class="text-2xl">Streamed</h2>
+            <p>Best place to watch live sports for any of your favorite games.</p>
+            <a href="https://streamed.su" class="btn btn-primary">Watch Now</a>
+        </div>
+    </section>
+    <script>
+        const sr = ScrollReveal({
+            distance: '50px',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+        sr.reveal('#content');
+    </script>
+</body>
+</html>
