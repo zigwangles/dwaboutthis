@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <title>Streaming</title>
+    <title>Zig Wangles</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -21,24 +21,22 @@
             margin: 0;
             padding: 0;
         }
-        #content {
+        #hero {
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             color: #fff;
-            padding: 50px 20px;
         }
-        .game-card {
+        .link-card {
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
             transition: transform 0.3s;
-            width: 300px;
-            text-align: center;
         }
-        .game-card:hover {
+        .link-card:hover {
             transform: translateY(-5px);
         }
     </style>
@@ -60,22 +58,11 @@
             </div>
         </div>
     </nav>
-    <section id="content">
-        <h1 class="text-4xl font-bold mb-5">Free Streaming Services</h1>
-        <div class="game-card">
-            <h2 class="text-2xl">yuPPow</h2>
-            <p>Best free browser streaming for movies and TV. No ads and basically eveey movie/tv show you could want.</p>
-            <a href="https://yuppow.com" class="btn btn-primary">Watch Here</a>
-        </div>
-        <div class="game-card">
-            <h2 class="text-2xl">h!anime</h2>
-            <p>Best free anime streaming service as of right now but this changes often.</p>
-            <a href="https://hianime.to" class="btn btn-primary">Watch Here</a>
-        </div>
-        <div class="game-card">
-            <h2 class="text-2xl">Streamed</h2>
-            <p>Best place to watch live sports for any of your favorite games.</p>
-            <a href="https://streamed.su" class="btn btn-primary">Watch Now</a>
+    <section id="hero">
+        <div>
+            <h1 class="text-5xl font-bold animate__animated animate__fadeInDown">Welcome to My Website</h1>
+            <p class="text-lg mt-5">Explore an intriguing collection of resources, ranging from game pirating to streaming services. My website serves as a digital hub designed to streamline your access to essential tools, tutorials, and projects. I scoured through the internet and gathered the best, virus-free websites for all the best categories.</p>
+            <a href="contact.html" class="btn btn-primary mt-6">Get in Touch</a>
         </div>
     </section>
     <script>
@@ -85,7 +72,8 @@
             easing: 'ease-in-out',
             reset: true
         });
-        sr.reveal('#content');
+        sr.reveal('#hero h1');
+        sr.reveal('#hero p', { delay: 200 });
     </script>
 </body>
 </html>
