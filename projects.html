@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Other Projects</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4e54c8 30%, #8f94fb 70%);
+            overflow-x: hidden;
+            margin: 0;
+        }
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            padding: 50px 20px;
+        }
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .header-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-base-300">
+        <div class="flex-none">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-primary m-1">Menu</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html" class="link-card">Home</a></li>
+                    <li><a href="games.html" class="link-card">Games</a></li>
+                    <li><a href="streaming.html" class="link-card">Streaming</a></li>
+                    <li><a href="sideloading.html" class="link-card">Sideloading</a></li>
+                    <li><a href="tutorials.html" class="link-card">Tutorials</a></li>
+                    <li><a href="projects.html" class="link-card">Other Projects</a></li>
+                    <li><a href="contact.html" class="link-card">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <h1 class="header-title">Other Projects</h1>
+        <div class="project-card" data-sr-id="1">
+            <h2 class="font-semibold">Repository/Selling Certificates</h2>
+            <p>Discord Server: <a href="https://example.com/project1" target="_blank" class="text-blue-400">Not Up Yet</a></p>
+        </div>
+        <div class="project-card" data-sr-id="2">
+            <h2 class="font-semibold">Shape It Up</h2>
+            <>GitHub Link: <a href="https://github.com/zigwangles/shape-it-up" target="_blank" class="text-blue-400">Add to the Project</a></p>
+        </div>
+        <div class="project-card" data-sr-id="3">
+            <h2 class="font-semibold">Not Sure Yet</h2>
+            <p>Somethings Gonna Come Up: <a href="https://example.com/project3" target="_blank" class="text-blue-400">Boo</a></p>
+        </div>
+        <div class="footer">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+        ScrollReveal().reveal('.project-card', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '20px',
+            opacity: 0,
+            interval: 200
+        });
+    </script>
+</body>
+</html>
